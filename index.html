@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diwali Greetings</title>
+    <link rel="stylesheet" href="body {.css">
+</head>
+<body>
+
+    <div class="content">
+        <div id="greetingContainer">
+            <div id="greetingText"></div>
+            <div id="inputContainer">
+                <h1>Diwali Greetings Generator</h1>
+                <label for="name">Enter your name:</label>
+                <input type="text" id="name" placeholder="Your Name">
+                <button onclick="generateGreeting()">Generate Greeting</button>
+            </div>
+        </div>
+
+        <div id="videoContainer">
+            <video id="diwaliVideo" autoplay muted loop>
+                <source src="Jethalal happy diwali song viral 🚫.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <audio id="diwaliAudio" src="Jethalal happy diwali song viral [TubeRipper.com].m4a" preload="auto" loop></audio>
+        </div>
+        
+        <!-- Google Ads Section -->
+        <div id="googleAds">
+            <!-- Insert your Google AdSense code here -->
+            <!-- Example: <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+            <!--           <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXX" data-ad-format="auto"></ins> -->
+            <!--           <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> -->
+        </div>
+    </div>
+
+    <script>
+        function generateGreeting() {
+            var name = document.getElementById('name').value;
+            var greeting = "Happy Diwali " + name + "🥳";
+            document.getElementById('greetingText').innerText = greeting;
+
+            // Hide inputContainer and show videoContainer
+            document.getElementById('inputContainer').style.display = 'none';
+            document.getElementById('videoContainer').style.display = 'block';
+
+            // Play video and audio
+            document.getElementById('diwaliVideo').play();
+            document.getElementById('diwaliAudio').play();
+        }
+    </script>
+</body>
+</html>
